@@ -14,3 +14,10 @@
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('forms', function () {
+    return view('forms');
+});
+
+Route::post('forms', 'FormController@index')->name('forms');
