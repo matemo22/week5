@@ -21,3 +21,9 @@ Route::get('forms', function () {
 });
 
 Route::post('forms', 'FormController@index')->name('forms');
+
+Route::get('mail', function() {
+	return view('mail');
+});
+
+Route::post('send_email', 'MailController@send');
